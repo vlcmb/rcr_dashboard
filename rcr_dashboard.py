@@ -32,8 +32,7 @@ if "problem" in st.session_state:
     problem = st.session_state["problem"]
     task = st.session_state["task"]
     st.subheader("Problem Prompt")
-    html_prompt_output = task.prompt(problem.metadata).replace("\n", "<br>")
-    st.write(html_prompt_output)
+    st.write(task.prompt(problem.metadata))
 
     # User input for answer
     user_answer = st.text_area("Your Answer:")
