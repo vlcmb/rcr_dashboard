@@ -2,3 +2,4 @@
 # If you vendor reasoning_core in the repo, don't add it here.
 streamlit>=1.24.0      # optional pin
 reasoning-core   # only if your package is on PyPi
+scikit-learn
